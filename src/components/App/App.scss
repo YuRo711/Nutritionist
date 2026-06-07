@@ -1,0 +1,8 @@
+@use '../../variables.scss' as *;
+
+.page {
+  min-height: 100vh;
+  background-color: $color-green-99;
+  display: flex;
+  flex-direction: column;
+}
