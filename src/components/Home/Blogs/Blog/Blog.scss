@@ -1,0 +1,81 @@
+@use "../../../../variables.scss" as *;
+
+.blog {
+  padding: 40px;
+  border-radius: 12px;
+  background-color: $color-green-95;
+  border: solid 1px $color-green-85;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100%;
+  cursor: pointer;
+}
+
+.blog__image {
+  max-width: 100%;
+}
+
+.blog__category, .blog__text, .blog__info {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.blog__category {
+  margin-top: 40px;
+}
+
+.blog__text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.blog__title {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.blog__footer {
+  margin-top: auto;
+  background-color: $color-green-97;
+  border-radius: 12px;
+  border: solid 1px $color-green-90;
+  display: flex;
+  padding: 20px 16px 20px 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+.blog__author {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.blog__buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.blog__button {
+  border-radius: 8px;
+  border: solid 1px $color-green-90;
+  background-color: $color-green-95;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60px;
+  width: 60px;
+  transition: background-color 0.2s ease;
+}
+
+.blog__button:hover {
+  background-color: $color-green-90;
+}
+
+.blog__button_like {
+  background-image: url("../../../../images/like.svg");
+}
+
+.blog__button_save {
+  background-image: url("../../../../images/save.svg");
+}
