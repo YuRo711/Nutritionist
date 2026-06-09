@@ -28,12 +28,14 @@ p {
   font-family: 'Urbanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    color: $color-grey-20;
-    line-height: 150%;
+  color: $color-grey-20;
+  line-height: 150%;
+  font-size: 18px;
 }
 
 a {
   text-decoration: none;
+  font-size: 18px;
 }
 
 button {
@@ -42,7 +44,9 @@ button {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   cursor: pointer;
-    color: $color-grey-15;
+  color: $color-grey-15;
+  line-height: 150%;
+  font-size: 18px;
 }
 
 @import url("./vendor/fonts.css");

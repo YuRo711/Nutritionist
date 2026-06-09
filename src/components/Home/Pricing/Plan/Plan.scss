@@ -1,0 +1,52 @@
+@use "../../../../variables.scss" as *;
+
+.plan {
+  padding: 50px;
+  border-radius: 12px;
+  background-color: $color-green-95;
+  border: solid 1px $color-green-85;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: $color-grey-15;
+}
+
+.plan__save {
+  color: $color-grey-30;
+}
+
+.plan__text {
+  color: $color-grey-15;
+  margin-top: 40px;
+}
+
+.plan__price-number {
+  color: $color-dark-green-25;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 87.5%;
+}
+
+.plan__price {
+  color:$color-grey-20;
+  margin-top: 40px;
+}
+
+.plan__button {
+  background-color: $color-green-70;
+  border-radius: 8px;
+  color: $color-grey-15;
+  padding: 18px 0;
+  width: 100%;
+  font-weight: 600;
+  margin-top: 33px;
+  transition: background-color 0.2s ease;
+}
+
+.plan__button:hover {
+  background-color: $color-green-80;
+}

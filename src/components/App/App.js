@@ -4,13 +4,14 @@ import './App.scss';
 import Home from '../Home/Home';
 import { features } from '../../utils/features';
 import { blogs } from '../../utils/blogs';
+import { plans } from '../../utils/plans';
 
 function App() {
   return (
     <div className="page">
       <Header/>
       <Routes>
-        <Route path='/' element={<Home features={features} blogs={blogs}/>}/>
+        <Route path='/' element={<Home features={features} blogs={blogs} plans={plans}/>}/>
       </Routes>
     </div>
   );
