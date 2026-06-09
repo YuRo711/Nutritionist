@@ -1,0 +1,41 @@
+import Review from "./Review/Review";
+import "./Testimonials.scss";
+import left from "../../../images/left.svg";
+import right from "../../../images/right.svg";
+import { useEffect, useState } from "react";
+
+export default function Testimonials(props) {
+  const { reviews } = props;
+  const [page, setPage] = useState(0);
+
+  return <section className="section" id="testimonials">
+    <h2 className="section__title">Our Testimonials</h2>
+    <p className="section__subtitle">
+      Our satisfied clients share their success stories and experiences on their journey to better health and well-being.
+    </p>
+    <div className="testimonials__container">
+      <div className="testimonials__reviews" style={{left: `calc((100vw - 364px) * (-${page}))`}}>
+      {
+        reviews.map((review, i) => <Review data={review} key={`review-${i}`}/>)
+      }
+      </div>
+    </div>
+    <div className="testimonials__scroll">
+      <button className="testimonials__scroll-button" onClick={() => setPage(Math.max(page - 1, 0))}>
+        <img className="testimonials__arrow" src={left} alt="left"/>
+      </button>
+      <div className="testimonials__pages">
+      {
+        reviews.map((review, i) => {
+          if (i % 3 == 0)
+            return <div key={`dot-${i}`}
+              className={`testimonials__page-dot ${i / 3 === page ? "testimonials__page-dot_selected" : ""}`}/>
+        })
+      }
+      </div>
+      <button className="testimonials__scroll-button" onClick={() => setPage(Math.min(page + 1, reviews.length / 3 - 1))}>
+        <img className="testimonials__arrow" src={right} alt="right"/>
+      </button>
+    </div>
+  </section>
+}

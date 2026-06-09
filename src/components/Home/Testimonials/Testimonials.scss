@@ -1,0 +1,48 @@
+@use "../../../variables.scss" as *;
+
+.testimonials__container {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.testimonials__reviews {
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
+  position: relative;
+  transition: left 0.3s ease;
+}
+
+.testimonials__scroll {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.testimonials__scroll-button {
+  border-radius: 8px;
+  background-color: $color-green-95;
+  border: solid 1px $color-green-90;
+  height: 58px;
+  width: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__pages {
+  display: flex;
+  gap: 4px;
+}
+
+.testimonials__page-dot {
+  background-color: $color-green-85;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.testimonials__page-dot_selected {
+  background-color: $color-dark-green-30;
+}

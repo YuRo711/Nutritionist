@@ -1,0 +1,39 @@
+@use "../../../../variables.scss" as *;
+
+.review {
+  background-color: $color-green-97;
+  border: solid 1px $color-green-90;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: calc((100vw - 364px) / 3);
+  flex-shrink: 0;
+}
+
+.review__icon {
+  height: 40px;
+  width: 40px;
+  margin: 40px 0 0 40px;
+}
+
+.review__text {
+  padding: 50px 40px 40px;
+}
+
+.review__author {
+  padding: 30px 40px;
+  background-color: $color-green-95;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.review__portrait {
+  height: 60px;
+  width: 60px;
+}
+
+.review__name {
+  font-weight: 600;
+}
