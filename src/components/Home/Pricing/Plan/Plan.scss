@@ -7,6 +7,7 @@
   border: solid 1px $color-green-85;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .plan__title {
@@ -50,4 +51,27 @@
 
 .plan__button:hover {
   background-color: $color-green-80;
+}
+
+
+@media screen and (max-width: 1600px) and (min-width: 600px) {
+  .plan {
+    padding: 40px;
+  }
+
+  .plan__title {
+    font-size: 24px;
+  }
+
+  .plan__text {
+    margin: 30px 0;
+  }
+
+  .plan__price-number {
+    font-size: 40px;
+  }
+
+  .plan__button {
+    padding: 14px 0;
+  }
 }

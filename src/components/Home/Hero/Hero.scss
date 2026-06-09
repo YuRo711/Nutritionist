@@ -8,6 +8,7 @@
 }
 
 .hero__main {
+  margin-left: 40px;
   max-width: 800px;
   display: flex;
   flex-direction: column;
@@ -92,4 +93,33 @@
 .hero__customers-bold {
   color: $color-dark-green-40;
   font-weight: 700;
+}
+
+
+@media screen and (max-width: 1500px) and (min-width: 600px) {
+  .hero__subtitle {
+    font-size: 22px;
+  }
+
+  .hero__title {
+    font-size: 48px;
+  }
+
+  .hero__button {
+    padding: 14px 16px;
+  }
+
+  .hero__customers-container {
+    padding: 6px 8px;
+  }
+
+  .hero__customer {
+    height: 40px;
+    width: 40px;
+    margin-left: -17px;
+  }
+
+  .hero__customers-text {
+    font-size: 18px;
+  }
 }

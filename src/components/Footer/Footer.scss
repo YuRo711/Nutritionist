@@ -71,3 +71,34 @@
   color: $color-grey-95;
   margin-left: auto;
 }
+
+
+@media screen and (max-width: 1600px) and (min-width: 600px) {
+  .footer {
+    padding: 40px 80px;
+    gap: 40px;
+  }
+
+  .footer__logo {
+    height: 30px;
+  }
+
+  .footer__up-button {
+    height: 48px;
+    width: 48px;
+  }
+
+  .footer__up-arrow {
+    height: 24px;
+    width: 24px;
+  }
+
+  .footer__contacts {
+    padding: 14px 26px 14px 16px;
+    gap: 16px;
+  }
+
+  .footer__contact {
+    padding: 12px;
+  }
+}

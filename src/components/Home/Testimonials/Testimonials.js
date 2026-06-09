@@ -7,6 +7,13 @@ import { useEffect, useState } from "react";
 export default function Testimonials(props) {
   const { reviews } = props;
   const [page, setPage] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.screen.width < 600);
+  const [isLaptop, setIsLaptop] = useState(window.screen.width <= 1600 && window.screen.width >= 600);
+  console.log(window.screen.width)
+  useEffect(() => {
+    setIsLaptop(window.screen.width <= 1600 && window.screen.width >= 600);
+    setIsMobile(window.screen.width < 600);
+  }, [window.screen.width]);
 
   return <section className="section" id="testimonials">
     <h2 className="section__title">Our Testimonials</h2>
@@ -14,7 +21,8 @@ export default function Testimonials(props) {
       Our satisfied clients share their success stories and experiences on their journey to better health and well-being.
     </p>
     <div className="testimonials__container">
-      <div className="testimonials__reviews" style={{left: `calc((100vw - 364px) * (-${page}))`}}>
+      <div className="testimonials__reviews" 
+        style={{left: `calc((${isLaptop ? 140 : 304}px - 100vw) * ${page})`}}>
       {
         reviews.map((review, i) => <Review data={review} key={`review-${i}`}/>)
       }

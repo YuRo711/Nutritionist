@@ -2,7 +2,8 @@
 
 .features__grid {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: calc(50% - 15px) calc(50% - 15px);
   align-items: center;
   gap: 30px;
+  position: relative;
 }

@@ -1,13 +1,24 @@
 import "./Hero.scss";
 import hero from "../../../images/Hero.png";
+import laptop from "../../../images/hero laptop.png";
+import mobile from "../../../images/hero mobile.png";
 import customer1 from "../../../images/Customer 1.png";
 import customer2 from "../../../images/Customer 2.png";
 import customer3 from "../../../images/Customer 3.png";
 import { NavLink } from "react-router";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const [isMobile, setIsMobile] = useState(window.screen.width < 600);
+  const [isLaptop, setIsLaptop] = useState(window.screen.width <= 1600 && window.screen.width >= 600);
+  console.log(window.screen.width)
+  useEffect(() => {
+    setIsLaptop(window.screen.width <= 1600 && window.screen.width >= 600);
+    setIsMobile(window.screen.width < 600);
+  }, [window.screen.width]);
+
   return <section className="hero" id="hero">
-    <img className="hero__image" src={hero} alt="A woman smiling"/>
+    <img className="hero__image" src={isLaptop ? laptop : isMobile ? mobile : hero} alt="A woman smiling"/>
     <div className="hero__main">
       <h2 className="hero__subtitle">Transform Your ❤️ Health with</h2>
       <h1 className="hero__title">Personalized Nutrition Coaching</h1>

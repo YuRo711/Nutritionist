@@ -46,3 +46,17 @@
 .testimonials__page-dot_selected {
   background-color: $color-dark-green-30;
 }
+
+
+@media screen and (max-width: 1600px) and (min-width: 600px) {
+  .testimonials__scroll-button {
+    height: 48px;
+    width: 48px;
+  }
+
+  .testimonials__page-dot {
+    height: 7px;
+    width: 7px;
+    border-radius: 3.5px;
+  }
+}
