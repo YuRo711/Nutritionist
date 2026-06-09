@@ -4,7 +4,7 @@ import "./Features.scss";
 export default function Features(props) {
   const { features } = props;
 
-  return <section className="section">
+  return <section className="section" id="features">
     <h2 className="section__title">Features</h2>
     <p className="section__subtitle">
       Welcome to the Feature Section of Nutritionist, your ultimate destination for all things nutrition and wellness.

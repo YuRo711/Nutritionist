@@ -6,7 +6,7 @@ import customer3 from "../../../images/Customer 3.png";
 import { NavLink } from "react-router";
 
 export default function Hero() {
-  return <section className="hero">
+  return <section className="hero" id="hero">
     <img className="hero__image" src={hero} alt="A woman smiling"/>
     <div className="hero__main">
       <h2 className="hero__subtitle">Transform Your ❤️ Health with</h2>

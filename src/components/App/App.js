@@ -5,6 +5,7 @@ import Home from '../Home/Home';
 import { features } from '../../utils/features';
 import { blogs } from '../../utils/blogs';
 import { plans } from '../../utils/plans';
+import Footer from '../Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home features={features} blogs={blogs} plans={plans}/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }

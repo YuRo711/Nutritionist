@@ -7,6 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -31,11 +32,13 @@ p {
   color: $color-grey-20;
   line-height: 150%;
   font-size: 18px;
+  font-weight: 500;
 }
 
 a {
   text-decoration: none;
   font-size: 18px;
+  font-weight: 500;
 }
 
 button {

@@ -1,0 +1,73 @@
+@use '../../variables.scss' as *;
+
+.footer {
+  background-color: $color-dark-green-15;
+  margin-top: auto;
+  padding: 50px 162px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links {
+  display: flex;
+  gap: 26px;
+}
+
+.footer__link {
+  color: $color-white;
+}
+
+.footer__up {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__up-text {
+  color: $color-white;
+}
+
+.footer__up-button {
+  height: 62px;
+  width: 62px;
+  border-radius: 73px;
+  background-color: $color-dark-green-20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__contacts {
+  border-radius: 8px;
+  background-color: $color-dark-green-20;
+  border: solid 1px $color-dark-green-25;
+  padding: 16px 30px 16px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer__contact {
+  padding: 14px;
+  display: flex;
+  gap: 6px;
+  border: solid 1px $color-dark-green-25;
+  border-radius: 6px;
+}
+
+.footer__contact-text {
+  color: $color-white;
+  text-wrap-mode: nowrap;
+}
+
+.footer__copyright {
+  color: $color-grey-95;
+  margin-left: auto;
+}

@@ -6,7 +6,7 @@ export default function Pricing(props) {
   const [isYearly, setIsYearly] = useState(false);
   const { plans } = props;
 
-  return <section className="section pricing">
+  return <section className="section" id="pricing">
     <h2 className="section__title">Our pricing</h2>
     <p className="section__subtitle">
       We outline our flexible and affordable options to support you on your journey to optimal health and nutrition. We believe that everyone deserves access to personalized nutrition guidance and resources
