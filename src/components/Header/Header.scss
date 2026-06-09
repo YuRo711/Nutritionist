@@ -33,11 +33,15 @@
 }
 
 .header__nav {
-  height: 95px;
   padding: 20px 162px;
   box-sizing: border-box;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.header__logo {
+  height: 45px;
 }
 
 .header__links {
@@ -65,4 +69,33 @@
 
 .header__button:hover {
   background-color: $color-green-80;
+}
+
+
+@media screen and (max-width: 1500px) and (min-width: 600px) {
+  .header__nav {
+    padding: 16px 80px;
+  }
+
+  .header__logo {
+    height: 25px;
+  }
+
+  .header__links {
+    gap: 20px;
+  }
+
+  .header__demo-icon {
+    height: 17px;
+    width: 17px;
+  }
+
+  .header__demo-arrow {
+    height: 20px;
+    width: 20px;
+  }
+
+  .header__button {
+    padding: 12px 16px;
+  }
 }

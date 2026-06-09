@@ -52,4 +52,11 @@ button {
   font-size: 18px;
 }
 
+
+@media screen and (max-width: 1500px) and (min-width: 600px) {
+  p, a, button {
+    font-size: 14px
+  }
+}
+
 @import url("./vendor/fonts.css");
