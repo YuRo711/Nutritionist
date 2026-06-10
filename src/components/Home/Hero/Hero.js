@@ -11,7 +11,6 @@ import { useEffect, useState } from "react";
 export default function Hero() {
   const [isMobile, setIsMobile] = useState(window.screen.width < 600);
   const [isLaptop, setIsLaptop] = useState(window.screen.width <= 1600 && window.screen.width >= 600);
-  console.log(window.screen.width)
   useEffect(() => {
     setIsLaptop(window.screen.width <= 1600 && window.screen.width >= 600);
     setIsMobile(window.screen.width < 600);

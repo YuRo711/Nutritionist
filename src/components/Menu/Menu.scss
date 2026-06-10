@@ -1,0 +1,16 @@
+@use "../../variables.scss" as *;
+
+.menu {
+  display: none;
+}
+
+.menu_open {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+}
+
+.menu__link {
+  padding: 4px 0;
+  color: $color-white;
+}
