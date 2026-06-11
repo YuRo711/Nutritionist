@@ -22,26 +22,29 @@ export default function Testimonials(props) {
     </p>
     <div className="testimonials__container">
       <div className="testimonials__reviews" 
-        style={{left: `calc((${isLaptop ? 140 : 304}px - 100vw) * ${page})`}}>
+        style={{left: `calc((${isMobile ? 12 : isLaptop ? 140 : 304}px - 100vw) * ${page})`}}>
       {
         reviews.map((review, i) => <Review data={review} key={`review-${i}`}/>)
       }
       </div>
     </div>
     <div className="testimonials__scroll">
-      <button className="testimonials__scroll-button" onClick={() => setPage(Math.max(page - 1, 0))}>
+      <button className="testimonials__scroll-button" 
+        onClick={() => setPage(Math.max(page - 1, 0))}>
         <img className="testimonials__arrow" src={left} alt="left"/>
       </button>
       <div className="testimonials__pages">
       {
         reviews.map((review, i) => {
-          if (i % 3 == 0)
+          if (isMobile || i % 3 == 0)
             return <div key={`dot-${i}`}
-              className={`testimonials__page-dot ${i / 3 === page ? "testimonials__page-dot_selected" : ""}`}/>
+              className={`testimonials__page-dot 
+                ${!isMobile && i / 3 === page || isMobile && i == page ? "testimonials__page-dot_selected" : ""}`}/>
         })
       }
       </div>
-      <button className="testimonials__scroll-button" onClick={() => setPage(Math.min(page + 1, reviews.length / 3 - 1))}>
+      <button className="testimonials__scroll-button" 
+        onClick={() => setPage(Math.min(page + 1, isMobile ? reviews.length - 1 : reviews.length / 3 - 1))}>
         <img className="testimonials__arrow" src={right} alt="right"/>
       </button>
     </div>

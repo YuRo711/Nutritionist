@@ -41,3 +41,19 @@
     font-size: 24px;
   }
 }
+
+
+@media screen and (max-width: 600px) {
+  .feature {
+    padding: 30px;
+  }
+
+  .feature__icon {
+    height: 48px;
+    width: 48px;
+  }
+
+  .feature__title {
+    font-size: 18px;
+  }
+}

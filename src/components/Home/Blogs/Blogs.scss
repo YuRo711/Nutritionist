@@ -4,3 +4,11 @@
   align-items: center;
   gap: 30px;
 }
+
+
+@media screen and (max-width: 600px) {
+  .blogs__grid {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+}

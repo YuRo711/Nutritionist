@@ -64,3 +64,36 @@
     gap: 10px;
   }
 }
+
+
+@media screen and (max-width: 600px) {
+  .review {
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .review__icon {
+    height: 34px;
+    width: 34px;
+    margin: 24px 0 0 24px;
+  }
+
+  .review__text {
+    padding: 40px 24px 24px;
+  }
+
+  .review__author {
+    background-color: $color-green-95;
+    padding: 18px 24px;
+    gap: 10px;
+  }
+
+  .review__portrait {
+    height: 40px;
+    width: 40px;
+  }
+
+  .review__name {
+    font-size: 16px;
+  }
+}

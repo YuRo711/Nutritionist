@@ -18,6 +18,17 @@ export default function Hero() {
 
   return <section className="hero" id="hero">
     <img className="hero__image" src={isLaptop ? laptop : isMobile ? mobile : hero} alt="A woman smiling"/>
+    {
+    isMobile ?
+    <div className="hero__customers">
+      <div className="hero__customers-container">
+        <img className="hero__customer" src={customer1} alt="customer"/>
+        <img className="hero__customer" src={customer2} alt="customer"/>
+        <img className="hero__customer" src={customer3} alt="customer"/>
+      </div>
+      <p className="hero__customers-text"><b className="hero__customers-bold">430+</b> Happy Customers</p>
+    </div> : ""
+    }
     <div className="hero__main">
       <h2 className="hero__subtitle">Transform Your ❤️ Health with</h2>
       <h1 className="hero__title">Personalized Nutrition Coaching</h1>
@@ -34,6 +45,8 @@ export default function Hero() {
           <button className="hero__button hero__button_demo">Book a Demo</button>
         </NavLink>
       </div>
+      {
+      isMobile ? "" :
       <div className="hero__customers">
         <div className="hero__customers-container">
           <img className="hero__customer" src={customer1} alt="customer"/>
@@ -42,6 +55,7 @@ export default function Hero() {
         </div>
         <p className="hero__customers-text"><b className="hero__customers-bold">430+</b> Happy Customers</p>
       </div>
+      }
     </div>
   </section>
 }

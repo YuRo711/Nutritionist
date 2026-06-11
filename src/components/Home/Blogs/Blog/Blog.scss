@@ -38,8 +38,12 @@
   border: solid 1px $color-green-90;
   display: flex;
   padding: 20px 16px 20px 20px;
-  gap: 20px;
   align-items: center;
+}
+
+.blog__footer-info {
+  display: flex;
+  gap: 20px;
 }
 
 .blog__author {
@@ -115,5 +119,42 @@
   .blog__button {
     height: 48px;
     width: 48px;
+    background-size: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog {
+    padding: 24px;
+  }
+
+  .blog__category {
+    margin-top: 20px;
+  }
+
+  .blog__text {
+    margin: 18px 0;
+  }
+
+  .blog__author-image {
+    height: 40px;
+    width: 40px;
+  }
+
+  .blog__footer {
+    flex-direction: column;
+    padding: 16px 14px 16px 16px;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .blog__author {
+    font-size: 16px;
+  }
+
+  .blog__button {
+    height: 48px;
+    width: 48px;
+    background-size: 20px 20px;
   }
 }

@@ -5,11 +5,26 @@ import mail from "../../images/mail.svg";
 import phone from "../../images/phone.svg";
 import geo from "../../images/geo.svg";
 import { NavLink } from "react-router";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+  const [isMobile, setIsMobile] = useState(window.screen.width < 600);
+  useEffect(() => {
+    setIsMobile(window.screen.width < 600);
+  }, [window.screen.width]);
+
   return <footer className="footer">
     <div className="footer__nav">
-      <img className="footer__image" src={logo} alt="Nutritionist"/>
+      <img className="footer__logo" src={logo} alt="Nutritionist"/>
+      {
+      isMobile ?
+      <div className="footer__up">
+        <p className="footer__up-text">Go To Top</p>
+        <button className="footer__up-button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth"})}>
+          <img className="footer__up-arrow" src={arrow} alt="arrow up"/>
+        </button>
+      </div> : ""
+      }
       <nav className="footer__links">
         <NavLink className={`footer__link`} to="/" reloadDocument>Home</NavLink>
         <NavLink className={`footer__link`} to="/about" reloadDocument>About</NavLink>
@@ -19,12 +34,15 @@ export default function Footer() {
         <NavLink className={`footer__link`} to="/blog" reloadDocument>Blog</NavLink>
         <NavLink className={`footer__link`} to="/contact" reloadDocument>Contact</NavLink>
       </nav>
+      {
+      isMobile ? "" :
       <div className="footer__up">
         <p className="footer__up-text">Go To Top</p>
         <button className="footer__up-button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth"})}>
           <img className="footer__up-arrow" src={arrow} alt="arrow up"/>
         </button>
       </div>
+      }
     </div>
     <div className="footer__contacts">
       <div className="footer__contact">
