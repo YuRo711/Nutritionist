@@ -45,3 +45,23 @@
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .achievement {
+    gap: 16px;
+    padding: 30px;
+  }
+
+  .achievement__header {
+    gap: 10px;
+  }
+
+  .achievement__icon {
+    height: 48px;
+    width: 48px;
+  }
+
+  .achievement__title {
+    font-size: 18px;
+  }
+}

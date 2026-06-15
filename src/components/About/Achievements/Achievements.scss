@@ -14,3 +14,10 @@
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .achievements__grid {
+    gap: 20px;
+    grid-template-columns: 100%;
+  }
+}

@@ -10,6 +10,7 @@
   justify-content: space-between;
   position: relative;
   align-items: center;
+  overflow: hidden;
 }
 
 .about-contact__main {
@@ -64,5 +65,33 @@
 
   .about-contact__text {
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-contact {
+    padding: 40px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-contact__title {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .about-contact__text {
+    text-align: center;
+  }
+
+  .about-contact__button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 14px;
+  }
+
+  .about-contact__scribble {
+    top: -40px;
+    left: -50px;
   }
 }

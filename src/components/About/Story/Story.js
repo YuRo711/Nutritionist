@@ -9,7 +9,9 @@ export default function Story(props) {
     </p>
     <div className="story__milestones">
     {
-      props.story.map((milesone, i) => <Milestone data={milesone} key={`milestone-${i}`}/>)
+      props.story
+        .slice(0, props.isMobile ? 4 : props.story.length)
+        .map((milesone, i) => <Milestone data={milesone} key={`milestone-${i}`}/>)
     }
     </div>
   </section>

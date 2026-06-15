@@ -55,3 +55,28 @@
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .milestone {
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .milestone:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .milestone__image {
+    width: 100%;
+  }
+
+  .milestone__main {
+    width: 100%;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .milestone__title {
+    font-size: 20px;
+  }
+}

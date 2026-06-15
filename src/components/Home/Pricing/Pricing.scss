@@ -34,20 +34,12 @@
 
 
 @media screen and (max-width: 1600px) and (min-width: 600px) {
-  #pricing {
-    padding-bottom: 100px;
-  }
-
   .pricing__plans {
     margin-top: 40px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  #pricing {
-    padding-bottom: 50px;
-  }
-
   .pricing__plans {
     margin-top: 30px;
     flex-direction: column;

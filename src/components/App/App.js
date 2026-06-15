@@ -19,14 +19,13 @@ function App() {
     setIsLaptop(window.screen.width <= 1600 && window.screen.width >= 600);
     setIsMobile(window.screen.width < 600)
   }, [window.screen.width]);
-  const [isMenuOpen, setMenuOpen] = useState(false);
 
 
   return (
     <div className="page">
       <Header isMobile={isMobile}/>
       <Routes>
-        <Route path='/about' element={<About story={story} achievements={achievements}/>}/>
+        <Route path='/about' element={<About story={story} achievements={achievements} isMobile={isMobile}/>}/>
         <Route path='/' element={<Home features={features} blogs={blogs} plans={plans} reviews={reviews}
           isLaptop={isLaptop} isMobile={isMobile}/>}/>
       </Routes>

@@ -7,7 +7,7 @@ import Welcome from "./Welcome/Welcome";
 export default function About(props) {
   return <main className="about">
     <Welcome/>
-    <Story story={props.story}/>
+    <Story story={props.story} isMobile={props.isMobile}/>
     <Achievements achievements={props.achievements}/>
     <AboutContact/>
   </main>
