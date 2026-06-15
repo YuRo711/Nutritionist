@@ -79,6 +79,7 @@
   .footer {
     padding: 40px 80px;
     gap: 40px;
+    margin-top: 100px;
   }
 
   .footer__logo {
@@ -108,7 +109,7 @@
 @media screen and (max-width: 600px) {
   .footer {
     padding: 30px 16px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .footer__nav {
@@ -157,11 +158,5 @@
   .footer__copyright {
     margin: 0;
     margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .footer {
-    margin-top: 50px;
   }
 }
