@@ -25,3 +25,23 @@
 .achievement__text {
   font-weight: 500;
 }
+
+@media screen and (max-width: 1600px) and (min-width: 600px) {
+  .achievement {
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .achievement__header {
+    gap: 10px;
+  }
+
+  .achievement__icon {
+    height: 54px;
+    width: 54px;
+  }
+
+  .achievement__title {
+    font-size: 20px;
+  }
+}

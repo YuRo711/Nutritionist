@@ -27,3 +27,17 @@
   margin-top: 50px;
   text-align: center;
 }
+
+@media screen and (max-width: 1600px) and (min-width: 600px) {
+  .welcome__title {
+    font-size: 38px;
+  }
+
+  .welcome__text {
+    margin-top: 40px;
+  }
+
+  .welcome__message {
+    padding: 80px;
+  }
+}

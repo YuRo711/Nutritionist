@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.about-contact__main {
+  z-index: 1;
+}
+
 .about-contact__title {
   font-weight: 600;
   font-size: 34px;
@@ -29,6 +33,7 @@
   font-weight: 600;
   flex-shrink: 0;
   transition: background-color 0.2s ease;
+  z-index: 1;
 }
 
 .about-contact__button:hover {
@@ -45,4 +50,19 @@
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+
+@media screen and (max-width: 1600px) and (min-width: 600px) {
+  .about-contact {
+    padding: 60px;
+  }
+
+  .about-contact__title {
+    font-size: 26px;
+  }
+
+  .about-contact__text {
+    margin-top: 10px;
+  }
 }

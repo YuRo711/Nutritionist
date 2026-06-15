@@ -27,8 +27,31 @@
 
 .milestone__title {
   color: $color-dark-green-15;
+  font-size: 28px;
+  border-bottom: solid 3px $color-green-70;
+  width: fit-content;
 }
 
 .milestone__date {
   font-weight: 600;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 600px) {
+  .milestone {
+    gap: 12px;
+  }
+
+  .milestone__image {
+    width: calc((50% - 6px));
+  }
+
+  .milestone__main {
+    width: calc(50% - 6px);
+    gap: 30px;
+    padding: 60px;
+  }
+
+  .milestone__title {
+    font-size: 24px;
+  }
 }

@@ -48,6 +48,15 @@
   }
 }
 
+@media screen and (max-width: 1600px) and (min-width: 600px) {
+  .section__title {
+    font-size: 38px;
+  }
+
+  .section__subtitle {
+    max-width: 780px;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .section {
