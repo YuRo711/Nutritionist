@@ -1,0 +1,29 @@
+@use '../../../variables.scss' as *;
+
+#welcome {
+  margin-top: 100px;
+}
+
+.welcome__image {
+  width: 100%;
+}
+
+.welcome__message {
+  padding: 100px;
+  background-color: $color-green-95;
+  border: solid 1px $color-green-85;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome__title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.welcome__text {
+  margin-top: 50px;
+  text-align: center;
+}

@@ -7,15 +7,30 @@ import { blogs } from '../../utils/blogs';
 import { plans } from '../../utils/plans';
 import Footer from '../Footer/Footer';
 import { reviews } from '../../utils/reviews';
+import About from '../About/About';
+import { useEffect, useState } from 'react';
+import { story } from '../../utils/story';
+import { achievements } from '../../utils/achievements';
 
 function App() {
+  const [isMobile, setIsMobile] = useState(window.screen.width < 600);
+  const [isLaptop, setIsLaptop] = useState(window.screen.width <= 1600 && window.screen.width >= 600);
+  useEffect(() => {
+    setIsLaptop(window.screen.width <= 1600 && window.screen.width >= 600);
+    setIsMobile(window.screen.width < 600)
+  }, [window.screen.width]);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+
   return (
     <div className="page">
-      <Header/>
+      <Header isMobile={isMobile}/>
       <Routes>
-        <Route path='/' element={<Home features={features} blogs={blogs} plans={plans} reviews={reviews}/>}/>
+        <Route path='/about' element={<About story={story} achievements={achievements}/>}/>
+        <Route path='/' element={<Home features={features} blogs={blogs} plans={plans} reviews={reviews}
+          isLaptop={isLaptop} isMobile={isMobile}/>}/>
       </Routes>
-      <Footer/>
+      <Footer isMobile={isMobile}/>
     </div>
   );
 }

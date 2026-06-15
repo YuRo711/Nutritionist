@@ -1,0 +1,34 @@
+@use "../../../../variables.scss" as *;
+
+.milestone {
+  display: flex;
+  width: 100%;
+  background-color: $color-green-70;
+  gap: 18px;
+}
+
+.milestone:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.milestone__image {
+  width: calc(50% - 9px);
+}
+
+.milestone__main {
+  background-color: $color-green-95;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px;
+  width: calc(50% - 9px);
+  box-sizing: border-box;
+}
+
+.milestone__title {
+  color: $color-dark-green-15;
+}
+
+.milestone__date {
+  font-weight: 600;
+}

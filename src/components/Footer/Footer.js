@@ -7,11 +7,8 @@ import geo from "../../images/geo.svg";
 import { NavLink } from "react-router";
 import { useEffect, useState } from "react";
 
-export default function Footer() {
-  const [isMobile, setIsMobile] = useState(window.screen.width < 600);
-  useEffect(() => {
-    setIsMobile(window.screen.width < 600);
-  }, [window.screen.width]);
+export default function Footer(props) {
+  const { isMobile } = props;
 
   return <footer className="footer">
     <div className="footer__nav">

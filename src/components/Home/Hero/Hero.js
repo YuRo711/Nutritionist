@@ -6,15 +6,9 @@ import customer1 from "../../../images/Customer 1.png";
 import customer2 from "../../../images/Customer 2.png";
 import customer3 from "../../../images/Customer 3.png";
 import { NavLink } from "react-router";
-import { useEffect, useState } from "react";
 
-export default function Hero() {
-  const [isMobile, setIsMobile] = useState(window.screen.width < 600);
-  const [isLaptop, setIsLaptop] = useState(window.screen.width <= 1600 && window.screen.width >= 600);
-  useEffect(() => {
-    setIsLaptop(window.screen.width <= 1600 && window.screen.width >= 600);
-    setIsMobile(window.screen.width < 600);
-  }, [window.screen.width]);
+export default function Hero(props) {
+  const { isMobile, isLaptop } = props;
 
   return <section className="hero" id="hero">
     <img className="hero__image" src={isLaptop ? laptop : isMobile ? mobile : hero} alt="A woman smiling"/>

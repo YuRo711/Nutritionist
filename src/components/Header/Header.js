@@ -10,14 +10,11 @@ import { NavLink } from "react-router";
 import { useEffect, useState } from "react";
 import Menu from "../Menu/Menu";
 
-export default function Header()
+export default function Header(props)
 {
   const [path, setPath] = useState(window.location.pathname);
   useEffect(() => setPath(window.location.pathname), []);
-  const [isMobile, setIsMobile] = useState(window.screen.width < 600);
-  useEffect(() => {
-    setIsMobile(window.screen.width < 600);
-  }, [window.screen.width]);
+  const { isMobile } = props;
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return <header className="header">

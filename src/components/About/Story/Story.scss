@@ -1,0 +1,11 @@
+@use '../../../variables.scss' as *;
+
+.story__milestones {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border: solid 1px $color-green-90;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}

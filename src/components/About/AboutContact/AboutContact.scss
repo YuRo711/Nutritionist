@@ -1,0 +1,48 @@
+@use "../../../variables.scss" as *;
+
+.about-contact {
+  border-radius: 12px;
+  border: solid 1px $color-green-85;
+  background-color: $color-green-95;
+  display: flex;
+  padding: 80px;
+  gap: 150px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.about-contact__title {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.about-contact__text {
+  margin-top: 14px;
+}
+
+.about-contact__button {
+  padding: 18px 24px;
+  background-color: $color-green-70;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+}
+
+.about-contact__button:hover {
+  background-color: $color-green-80;
+}
+
+.about-contact__scribble {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-contact__logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
