@@ -1,0 +1,138 @@
+@use "../../variables.scss" as *;
+
+.team__header {
+  background-color: $color-green-95;
+  border: solid 1px $color-green-85;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.team__info {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__bg {
+  position: absolute;
+  top: 0;
+}
+
+.team__logo {
+  height: 90px;
+  width: 90px;
+  z-index: 1;
+  margin-bottom: 80px;
+}
+
+.team__text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.team__categories {
+  display: flex;
+  padding: 30px 150px;
+  justify-content: space-between;
+  background-color: $color-dark-green-20;
+}
+
+.team__category {
+  background-color: transparent;
+  padding: 14px 20px;
+  border-radius: 8px;
+  color: $color-white;
+  font-size: 18px;
+  width: fit-content;
+  transition: background-color 0.2s ease;
+}
+
+.team__category_selected {
+  background-color: $color-dark-green-25;
+  border: solid 1px $color-dark-green-30;
+}
+
+.team__people {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+.person {
+  width: calc((100% - 90px) / 4);
+  position: relative;
+}
+
+.person__portrait {
+  width: 100%;
+}
+
+.person__info {
+  background-color: $color-green-95;
+  border-radius: 0 20px 0 0;
+  padding: 30px;
+  position: relative;
+  top: -52px;
+  width: 270px;
+}
+
+.join {
+  border-radius: 12px;
+  border: solid 1px $color-green-85;
+  background-color: $color-green-95;
+  display: flex;
+  padding: 80px;
+  gap: 150px;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  overflow: hidden;
+}
+
+.join__main {
+  z-index: 1;
+}
+
+.join__title {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.join__text {
+  margin-top: 14px;
+}
+
+.join__button {
+  padding: 18px 24px;
+  background-color: $color-green-70;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  flex-shrink: 0;
+  transition: background-color 0.2s ease;
+  z-index: 1;
+}
+
+.join__button:hover {
+  background-color: $color-green-80;
+}
+
+.join__scribble {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.join__logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

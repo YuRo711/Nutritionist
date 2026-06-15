@@ -23,6 +23,10 @@
   color: $color-grey-15;
 }
 
+.section__title_semibold {
+  font-weight: 600;
+}
+
 .section__subtitle {
   font-weight: 500;
   margin-top: 10px;
@@ -40,11 +44,13 @@
 
   .section__title {
     font-size: 48px;
+    z-index: 1;
   }
 
   .section__subtitle {
     margin-top: 10px;
     margin-bottom: 60px;
+    z-index: 1;
   }
 }
 

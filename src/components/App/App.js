@@ -11,6 +11,8 @@ import About from '../About/About';
 import { useEffect, useState } from 'react';
 import { story } from '../../utils/story';
 import { achievements } from '../../utils/achievements';
+import Team from '../Team/Team';
+import { team } from '../../utils/team';
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.screen.width < 600);
@@ -26,6 +28,7 @@ function App() {
       <Header isMobile={isMobile}/>
       <Routes>
         <Route path='/about' element={<About story={story} achievements={achievements} isMobile={isMobile}/>}/>
+        <Route path='/team' element={<Team team={team}/>}/>
         <Route path='/' element={<Home features={features} blogs={blogs} plans={plans} reviews={reviews}
           isLaptop={isLaptop} isMobile={isMobile}/>}/>
       </Routes>
