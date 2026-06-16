@@ -1,44 +1,13 @@
 @use "../../variables.scss" as *;
 
-.team__header {
-  background-color: $color-green-95;
-  border: solid 1px $color-green-85;
-  border-radius: 12px;
-  position: relative;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-.team__info {
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.team__bg {
-  position: absolute;
-  top: 0;
-}
-
-.team__logo {
-  height: 90px;
-  width: 90px;
-  z-index: 1;
-  margin-bottom: 80px;
-}
-
-.team__text {
-  margin-top: 20px;
-  text-align: center;
-}
-
 .team__categories {
   display: flex;
   padding: 30px 150px;
   justify-content: space-between;
   background-color: $color-dark-green-20;
+  border-radius: 0 0 12px 12px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .team__category {
@@ -146,11 +115,6 @@
 
 
 @media screen and (max-width: 1600px) and (min-width: 600px) {
-  .team__logo {
-    width: 68px;
-    height: 68px;
-  }
-
   .team__categories {
     padding: 24px 80px;
   }
@@ -188,24 +152,6 @@
 
 
 @media screen and (max-width: 600px) {
-  .team__bg {
-    width: 417px;
-  }
-
-  .team__info {
-    padding: 30px;
-  }
-
-  .team__logo {
-    height: 62px;
-    width: 62px;
-    margin-bottom: 30px;
-  }
-
-  .team__text {
-    margin-top: 6px;
-  }
-
   .team__categories {
     padding: 20px;
     flex-direction: column;
