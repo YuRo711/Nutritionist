@@ -46,7 +46,7 @@ export default function Team(props) {
       {
         props.team.find((person) => person.category == category) != null ?
         props.team.filter((person) => person.category == category)
-          .map((person, i) => <div className="person">
+          .map((person, i) => <div className="person" key={`person-${i}`}>
             <img className="person__portrait" src={person.image} alt={person.name}/>
             <div className="person__info">
               <h2 className="person__name">{person.name}</h2>

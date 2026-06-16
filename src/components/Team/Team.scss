@@ -70,6 +70,7 @@
 .person {
   width: calc((100% - 90px) / 4);
   position: relative;
+  margin-bottom: -52px;
 }
 
 .person__portrait {
@@ -88,10 +89,6 @@
 .person__name {
   font-weight: 600;
   font-size: 24px;
-}
-
-#join {
-  margin-top: 98px;
 }
 
 .join {
@@ -175,10 +172,6 @@
     font-size: 20px;
   }
 
-  #join {
-    margin-top: 48px;
-  }
-
   .join {
     padding: 60px;
   }
@@ -188,6 +181,82 @@
   }
 
   .join__button {
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .team__bg {
+    width: 417px;
+  }
+
+  .team__info {
+    padding: 30px;
+  }
+
+  .team__logo {
+    height: 62px;
+    width: 62px;
+    margin-bottom: 30px;
+  }
+
+  .team__text {
+    margin-top: 6px;
+  }
+
+  .team__categories {
+    padding: 20px;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .team__category {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .team__people {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .person {
+    width: 100%;
+  }
+
+  .person__info {
+    padding: 20px;
+  }
+
+  .person__name {
+    font-size: 20px;
+  }
+
+  .join {
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+  }
+
+  .join__scribble {
+    top: -40px;
+    left: -50px;
+  }
+  
+  .join__title {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .join__text {
+    text-align: center;
+  }
+
+  .join__button {
+    width: 100%;
     padding: 14px 20px;
     font-size: 14px;
   }
