@@ -6,3 +6,22 @@
   grid-template-columns: calc(50% - 25px) calc(50% - 25px);
   margin-top: 135px;
 }
+
+@media screen and (max-width: 1600px) and (min-width: 600px) {
+  .process__steps {
+    column-gap: 40px;
+    row-gap: 132px;
+    width: 100%;
+    grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+    margin-top: 92px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .process__steps {
+    row-gap: 102px;
+    width: 100%;
+    grid-template-columns: 100%;
+    margin-top: 72px;
+  }
+}
