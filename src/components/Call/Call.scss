@@ -1,6 +1,6 @@
-@use "../../../variables.scss" as *;
+@use "../../variables.scss" as *;
 
-.about-contact {
+.call {
   border-radius: 12px;
   border: solid 1px $color-green-85;
   background-color: $color-green-95;
@@ -13,20 +13,20 @@
   overflow: hidden;
 }
 
-.about-contact__main {
+.call__main {
   z-index: 1;
 }
 
-.about-contact__title {
+.call__title {
   font-weight: 600;
   font-size: 34px;
 }
 
-.about-contact__text {
+.call__text {
   margin-top: 14px;
 }
 
-.about-contact__button {
+.call__button {
   padding: 18px 24px;
   background-color: $color-green-70;
   border-radius: 8px;
@@ -37,17 +37,17 @@
   z-index: 1;
 }
 
-.about-contact__button:hover {
+.call__button:hover {
   background-color: $color-green-80;
 }
 
-.about-contact__scribble {
+.call__scribble {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.about-contact__logo {
+.call__logo {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -55,43 +55,44 @@
 
 
 @media screen and (max-width: 1600px) and (min-width: 600px) {
-  .about-contact {
+  .call {
     padding: 60px;
   }
 
-  .about-contact__title {
+  .call__title {
     font-size: 26px;
   }
 
-  .about-contact__text {
-    margin-top: 10px;
+  .call__button {
+    padding: 14px 20px;
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .about-contact {
-    padding: 40px;
+  .call {
     flex-direction: column;
+    padding: 40px;
     gap: 20px;
   }
 
-  .about-contact__title {
+  .call__scribble {
+    top: -40px;
+    left: -50px;
+  }
+  
+  .call__title {
     text-align: center;
     font-size: 22px;
   }
 
-  .about-contact__text {
+  .call__text {
     text-align: center;
   }
 
-  .about-contact__button {
+  .call__button {
     width: 100%;
-    padding: 14px 0;
+    padding: 14px 20px;
     font-size: 14px;
-  }
-
-  .about-contact__scribble {
-    top: -40px;
-    left: -50px;
   }
 }

@@ -13,6 +13,8 @@ import { story } from '../../utils/story';
 import { achievements } from '../../utils/achievements';
 import Team from '../Team/Team';
 import { team } from '../../utils/team';
+import Process from '../Process/Process';
+import { process } from '../../utils/process';
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.screen.width < 600);
@@ -29,6 +31,7 @@ function App() {
       <Routes>
         <Route path='/about' element={<About story={story} achievements={achievements} isMobile={isMobile}/>}/>
         <Route path='/team' element={<Team team={team}/>}/>
+        <Route path='/process' element={<Process process={process}/>}/>
         <Route path='/' element={<Home features={features} blogs={blogs} plans={plans} reviews={reviews}
           isLaptop={isLaptop} isMobile={isMobile}/>}/>
       </Routes>

@@ -60,59 +60,6 @@
   font-size: 24px;
 }
 
-.join {
-  border-radius: 12px;
-  border: solid 1px $color-green-85;
-  background-color: $color-green-95;
-  display: flex;
-  padding: 80px;
-  gap: 150px;
-  justify-content: space-between;
-  position: relative;
-  align-items: center;
-  overflow: hidden;
-}
-
-.join__main {
-  z-index: 1;
-}
-
-.join__title {
-  font-weight: 600;
-  font-size: 34px;
-}
-
-.join__text {
-  margin-top: 14px;
-}
-
-.join__button {
-  padding: 18px 24px;
-  background-color: $color-green-70;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  flex-shrink: 0;
-  transition: background-color 0.2s ease;
-  z-index: 1;
-}
-
-.join__button:hover {
-  background-color: $color-green-80;
-}
-
-.join__scribble {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.join__logo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
 
 @media screen and (max-width: 1600px) and (min-width: 600px) {
   .team__categories {
@@ -134,19 +81,6 @@
 
   .person__name {
     font-size: 20px;
-  }
-
-  .join {
-    padding: 60px;
-  }
-
-  .join__title {
-    font-size: 26px;
-  }
-
-  .join__button {
-    padding: 14px 20px;
-    font-size: 14px;
   }
 }
 
@@ -179,31 +113,5 @@
 
   .person__name {
     font-size: 20px;
-  }
-
-  .join {
-    flex-direction: column;
-    padding: 40px;
-    gap: 20px;
-  }
-
-  .join__scribble {
-    top: -40px;
-    left: -50px;
-  }
-  
-  .join__title {
-    text-align: center;
-    font-size: 22px;
-  }
-
-  .join__text {
-    text-align: center;
-  }
-
-  .join__button {
-    width: 100%;
-    padding: 14px 20px;
-    font-size: 14px;
   }
 }

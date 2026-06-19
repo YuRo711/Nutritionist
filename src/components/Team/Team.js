@@ -1,8 +1,7 @@
 import "./Team.scss";
-import scribble from "../../images/about scribble.svg";
-import logobg from "../../images/about logo.svg";
 import { useState } from "react";
 import TitleCard from "../TitleCard/TitleCard";
+import Call from "../Call/Call";
 
 export default function Team(props) {
   const [category, setCategory] = useState("Management Team");
@@ -49,18 +48,8 @@ export default function Team(props) {
       }
       </div>
     </section>
-    <section className="section" id="join">
-      <div className="join">
-      <div className="join__main">
-        <h2 className="join__title">Join Our Team</h2>
-        <p className="join__text">
-          We are always on the lookout for talented individuals who are enthusiastic about making a difference. Explore our career opportunities and join us in our mission to help people achieve their health and wellness goals.
-        </p>
-      </div>
-      <button className="join__button">Apply now</button>
-      <img className="join__scribble" src={scribble} alt="scribble"/>
-      <img className="join__logo" src={logobg} alt="Nutritionist logo"/>
-    </div>
-    </section>
+    <Call title="Join Our Team" button="Apply now"
+      text="We are always on the lookout for talented individuals who are enthusiastic about making a difference. Explore our career opportunities and join us in our mission to help people achieve their health and wellness goals."
+    />
   </main>
 }

@@ -1,0 +1,44 @@
+@use "../../../variables.scss" as *;
+
+.process-step {
+  z-index: 1;
+  position: relative;
+}
+
+.process-step__number {
+  color: $color-dark-green-40;
+  font-size: 150px;
+  z-index: -1;
+  position: absolute;
+  top: -135px;
+  left: 0;
+}
+  
+.process-step__container {
+  background-color: $color-green-95;
+  border: solid 1px $color-green-90;
+  border-radius: 12px;
+  padding: 50px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.process-step__header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.process-step__icon {
+  height: 66px;
+  width: 66px;
+}
+
+.process-step__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.process-step__text {
+  margin-top: 24px;
+}
